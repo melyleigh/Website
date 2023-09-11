@@ -1,0 +1,129 @@
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #404450;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+  color: #0d0e10;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+.project-card__subtitle {
+  font-weight: 600;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #337a66;
+}
+
+a:visited {
+  color: #2a1fff;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #337a66;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #994c30;
+}
+
+a:focus {
+  text-decoration: underline;
+  color: #337a66;
+}
+
+.project-card__button {
+  display: inline-block;
+  background-color: #fff;
+  color: #337a66;
+  border: 3px solid #45a582;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 20px;
+  margin: 4px 2px;
+}
+
+.project-card__button:visited {
+  background-color: #fff;
+  color: #45a582;
+  text-decoration: none;
+}
+
+.project-card__button:hover {
+  background-color: #45a582;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.project-card__button:focus {
+  background-color: #45a582;
+  color: #fff;
+  text-decoration: none;
+}
+
+.project-card__button:active {
+  background-color: #45a582;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-contact {
+  background-color: #45a582;
+  color: #fff;
+  border: 3px solid #45a582;
+  border-radius: 16px;
+  padding: 10px 20px;
+  margin: 4px 2px;
+}
+
+.button-contact:hover {
+  background-color: #fff;
+  color: #45a582;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button-contact:focus {
+  background-color: #45a582;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-contact:active {
+  background-color: #45a582;
+  color: #fff;
+  text-decoration: none;
+}
