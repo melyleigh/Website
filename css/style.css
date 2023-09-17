@@ -2,6 +2,10 @@ img {
   width: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -34,6 +38,13 @@ h3 {
   font-weight: 500;
 }
 
+.span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  display: block;
+}
+
 .project-card__subtitle {
   font-weight: 600;
 }
@@ -45,12 +56,14 @@ a {
 }
 
 a:visited {
-  color: #2a1fff;
+  font-weight: 600;
+  text-decoration: none;
+  color: #337a66;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #337a66;
+  color: #2a1fff;
 }
 
 a:active {
@@ -60,70 +73,154 @@ a:active {
 
 a:focus {
   text-decoration: underline;
-  color: #337a66;
+  color: #2a1fff;
 }
 
-.project-card__button {
+.button {
   display: inline-block;
   background-color: #fff;
   color: #337a66;
   border: 3px solid #45a582;
-  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 24px;
   text-decoration: none;
   font-weight: 400;
   padding: 10px 20px;
   margin: 4px 2px;
+  transition: 0.3s;
 }
 
-.project-card__button:visited {
+.button:visited {
   background-color: #fff;
   color: #45a582;
   text-decoration: none;
 }
 
-.project-card__button:hover {
+.button:hover {
   background-color: #45a582;
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
 }
 
-.project-card__button:focus {
+.button:focus {
   background-color: #45a582;
   color: #fff;
   text-decoration: none;
 }
 
-.project-card__button:active {
+.button:active {
   background-color: #45a582;
   color: #fff;
   text-decoration: none;
 }
 
-.button-contact {
+.button.filled {
   background-color: #45a582;
   color: #fff;
-  border: 3px solid #45a582;
-  border-radius: 16px;
-  padding: 10px 20px;
-  margin: 4px 2px;
 }
 
-.button-contact:hover {
+.button.filled:hover {
   background-color: #fff;
   color: #45a582;
-  text-decoration: none;
-  transition: 0.3s;
 }
 
-.button-contact:focus {
+.button.filled:focus {
   background-color: #45a582;
   color: #fff;
-  text-decoration: none;
 }
 
-.button-contact:active {
+.button.filled:active {
   background-color: #45a582;
   color: #fff;
-  text-decoration: none;
+}
+
+.social.icon {
+  fill: #4038c8;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+#hero p {
+  text-align: center;
+}
+
+.logo {
+  max-width: 125px;
+}
+
+header {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  height: [object Object]px;
+  border: solid #bdbdbd 1px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
+}
+
+#hero {
+  background-color: #fff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #0d0e10;
+}
+
+nav > ul > li > a:visited {
+  color: #0d0e10;
+}
+
+nav > ul > li > a:hover {
+  color: #0d0e10;
+}
+
+nav > ul > li > a:focus {
+  color: #4038c8;
+}
+
+nav > ul > li > a:active {
+  color: #0d0e10;
 }
