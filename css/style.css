@@ -38,8 +38,7 @@ h3 {
   font-weight: 500;
 }
 
-.span {
-  font-family: 'Montserrat', sans-serif;
+.hero-accent {
   font-size: 30px;
   font-weight: 300;
   display: block;
@@ -50,30 +49,22 @@ h3 {
 }
 
 a {
-  font-weight: 600;
-  text-decoration: none;
   color: #337a66;
 }
 
 a:visited {
-  font-weight: 600;
-  text-decoration: none;
   color: #337a66;
 }
 
-a:hover {
-  text-decoration: underline;
+a:hover,
+a:focus {
+  text-decoration: none;
   color: #2a1fff;
 }
 
 a:active {
-  text-decoration: underline;
+  text-decoration: none;
   color: #994c30;
-}
-
-a:focus {
-  text-decoration: underline;
-  color: #2a1fff;
 }
 
 .button {
@@ -88,7 +79,7 @@ a:focus {
   font-weight: 400;
   padding: 10px 20px;
   margin: 4px 2px;
-  transition: 0.3s;
+  transition: 0.3s opacity;
 }
 
 .button:visited {
@@ -101,7 +92,7 @@ a:focus {
   background-color: #45a582;
   color: #fff;
   text-decoration: none;
-  transition: 0.3s;
+  opacity: 0.8;
 }
 
 .button:focus {
@@ -136,8 +127,27 @@ a:focus {
   color: #fff;
 }
 
-.social.icon {
+.social svg path {
   fill: #4038c8;
+}
+
+.social svg {
+  width: 50px;
+  height: 50px;
+}
+
+.social svg path:hover {
+  background-color: #8584dc;
+}
+
+body::after {
+  content: "\00a9 Copyright Melyssa Ojeda 2023";
+}
+
+#about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Layout styling */
@@ -150,9 +160,19 @@ a:focus {
   margin: 25px 0;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
+}
+
+#work h2 {
+  text-align: center;
 }
 
 #hero h1 {
@@ -170,8 +190,7 @@ a:focus {
 header {
   background-color: #fff;
   text-align: center;
-  padding: 10px;
-  height: [object Object]px;
+  padding: 10px auto;
   border: solid #bdbdbd 1px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
@@ -181,14 +200,12 @@ header {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 99px;
 }
 
 #hero {
   background-color: #fff;
   padding: 20px 0;
-  display: inline-block;
-  width: 100%;
 }
 
 nav > ul {
@@ -214,7 +231,7 @@ nav > ul > li > a:visited {
 }
 
 nav > ul > li > a:hover {
-  color: #0d0e10;
+  color: #4038c8;
 }
 
 nav > ul > li > a:focus {
@@ -223,4 +240,84 @@ nav > ul > li > a:focus {
 
 nav > ul > li > a:active {
   color: #0d0e10;
+}
+
+.auto-width {
+  width: auto;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#about-page h3 {
+  margin-top: 0;
+}
+
+/* Animation berlin illustration */
+
+@keyframes color-change {
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
