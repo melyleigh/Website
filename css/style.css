@@ -206,7 +206,7 @@ section {
 }
 
 .style-guide img {
-  border: 1px solid #c9c9c9; 
+  border: 1px solid #c9c9c9;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -333,6 +333,23 @@ nav > ul > li > a:active {
   gap: 1em;
 }
 
+.final-product-images {
+  flex-direction: row;
+  gap: 3em;
+}
+
+.final-product-tablet_image {
+  width: 24%;
+}
+
+.final-product-desktop_image {
+  width: 60%;
+}
+
+.final-product-mobile_image {
+  width: 16%;
+}
+
 /* Animation berlin illustration */
 
 @keyframes color-change {
@@ -383,11 +400,11 @@ nav > ul > li > a:active {
 
   /* Brackets go out */
   ul.brackets li {
-  position: relative;
-}
+    position: relative;
+  }
 
-ul.brackets a:before, ul.brackets a:after
-{
+  ul.brackets a::before,
+  ul.brackets a::after {
     position: absolute;
     opacity: 0;
     font-size: 35px;
@@ -395,27 +412,25 @@ ul.brackets a:before, ul.brackets a:after
     transition: all 0.3s;
     font-weight: 400;
     line-height: 0;
-}
+  }
 
-ul.brackets a:before
-{
+  ul.brackets a::before {
     content: '(';
     left: 0px;
     transform: translateX(10px);
-}
+  }
 
-ul.brackets a:after
-{
+  ul.brackets a::after {
     content: ')';
     right: 0px;
     transform: translateX(-10px);
-}
+  }
 
-ul.brackets li:hover a:before, ul.brackets li:hover a:after
-{
+  ul.brackets li:hover a::before,
+  ul.brackets li:hover a::after {
     opacity: 1;
     transform: translateX(0px);
-}
+  }
 
   .col-md-6 {
     width: 50%;
@@ -423,11 +438,12 @@ ul.brackets li:hover a:before, ul.brackets li:hover a:after
 
   .row.project-card {
     flex-direction: row;
+    gap: 4em;
   }
 
   #about-page .welcome .row {
     flex-direction: row;
-    gap: 4em; 
+    gap: 4em;
   }
 
   .lets-collaborate .container {
@@ -440,6 +456,7 @@ ul.brackets li:hover a:before, ul.brackets li:hover a:after
 
   .skills .row {
     flex-direction: row;
+    gap: 4em;
   }
 
   .testing-images img,
@@ -449,7 +466,7 @@ ul.brackets li:hover a:before, ul.brackets li:hover a:after
 
   .sprout-intro .inner-section:last-child .row {
     flex-direction: row;
-    gap: 4em; 
+    gap: 4em;
   }
 
   .sprout-intro .inner-section:last-child .row .column {
@@ -468,7 +485,6 @@ ul.brackets li:hover a:before, ul.brackets li:hover a:after
     flex-direction: column;
     gap: 1em;
   }
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -490,10 +506,10 @@ ul.brackets li:hover a:before, ul.brackets li:hover a:after
     margin-right: auto;
   }
 
-.sprout-inspiration_image img {
-  height: 400px; 
-  object-fit: cover; 
-  object-position: 0 -333px;
+  .sprout-inspiration_image img {
+    height: 400px;
+    object-fit: cover;
+    object-position: 0 -333px;
   }
 
   .testing-images img,
