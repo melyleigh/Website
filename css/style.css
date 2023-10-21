@@ -119,22 +119,23 @@ a:active {
 }
 
 .button.filled {
-  background-color: #378468;
+  background-color: #4038c8;
+  border: 3px solid #4038c8;
   color: #fff;
 }
 
 .button.filled:hover {
   background-color: #fff;
-  color: #378468;
+  color: #4038c8;
 }
 
 .button.filled:focus {
-  background-color: #378468;
+  background-color: #4038c8;
   color: #fff;
 }
 
 .button.filled:active {
-  background-color: #378468;
+  background-color: #4038c8;
   color: #fff;
 }
 
@@ -241,9 +242,9 @@ header {
   background-color: #fff;
   padding: 10px 0;
   border-bottom: solid #bdbdbd 1px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
   position: fixed;
   width: 100%;
 }
