@@ -81,8 +81,8 @@ a:active {
 .button {
   display: inline-block;
   background-color: #fff;
-  color: #378468;
-  border: 3px solid #378468;
+  color: #4038c8;
+  border: 3px solid #4038c8;
   text-align: center;
   cursor: pointer;
   border-radius: 24px;
@@ -95,25 +95,25 @@ a:active {
 
 .button:visited {
   background-color: #fff;
-  color: #378468;
+  color: #4038c8;
   text-decoration: none;
 }
 
 .button:hover {
-  background-color: #378468;
+  background-color: #4038c8;
   color: #fff;
   text-decoration: none;
   opacity: 0.8;
 }
 
 .button:focus {
-  background-color: #378468;
+  background-color: #4038c8;
   color: #fff;
   text-decoration: none;
 }
 
 .button:active {
-  background-color: #378468;
+  background-color: #4038c8;
   color: #fff;
   text-decoration: none;
 }
@@ -313,14 +313,15 @@ nav > ul > li > a:active {
   display: none;
 }
 
-.navtoggle .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 0 px;
+  top: 0;
   padding-right: 0;
   font-size: 20px;
 }
@@ -410,6 +411,12 @@ nav > ul > li > a:active {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+.process-wrapper_links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
 /* Media queries */
 
 @media only screen and (min-width: 640px) {
@@ -458,20 +465,20 @@ nav > ul > li > a:active {
 
   ul.brackets a::before {
     content: '(';
-    left: 0 px;
+    left: 0;
     transform: translateX(10px);
   }
 
   ul.brackets a::after {
     content: ')';
-    right: 0 px;
+    right: 0;
     transform: translateX(-10px);
   }
 
   ul.brackets li:hover a::before,
   ul.brackets li:hover a::after {
     opacity: 1;
-    transform: translateX(0 px);
+    transform: translateX(0);
   }
 
   .col-md-6 {
