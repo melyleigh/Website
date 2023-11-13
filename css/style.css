@@ -55,6 +55,10 @@ footer .container {
   margin-top: 1em;
 }
 
+.final-images img {
+  width: 250px;
+}
+
 .project-card__subtitle {
   font-weight: 600;
 }
@@ -204,6 +208,7 @@ section {
 
 .testing-images img {
   border: 1px solid #c9c9c9;
+  width: 250px;
 }
 
 .style-guide img {
@@ -247,6 +252,7 @@ header {
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 .container,
